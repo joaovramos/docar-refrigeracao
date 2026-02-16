@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agendamento de Serviços | DOCAR Recife</title>
-  <meta name="description" content="Agende atendimento na DOCAR Refrigeração Automotiva em Recife, Caxangá. Escolha horário ou fale direto pelo WhatsApp.">
+  <meta name="description" content="Agende atendimento na DOCAR Refrigeração Automotiva em Recife, Caxangá. Combine horário pelo WhatsApp enquanto o calendário online é configurado.">
 
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="/docar-refrigeracao/assets/css/style.css">
@@ -13,46 +13,55 @@
 </head>
 <body>
   <header class="topbar">
-    <div class="container">
-      <img src="/docar-refrigeracao/assets/img/logo.png" alt="DOCAR Refrigeração Automotiva" class="logo">
+    <div class="container topbar-inner">
+      <a href="/docar-refrigeracao/" class="brand">
+        <img src="/docar-refrigeracao/assets/img/logo.jpg" alt="DOCAR Refrigeração Automotiva" class="logo">
+      </a>
       <nav class="menu">
         <a href="/docar-refrigeracao/">Início</a>
         <a href="/docar-refrigeracao/servicos/">Serviços</a>
         <a href="/docar-refrigeracao/catalogo/">Catálogo</a>
         <a href="/docar-refrigeracao/agendamento/">Agendamento</a>
+        <button class="btn-primary"
+                onclick="handleWhatsAppClick('menu_whatsapp','');">
+          WhatsApp
+        </button>
       </nav>
     </div>
   </header>
 
   <main class="page">
     <section class="section-light">
-      <div class="container">
-        <h1>Agendamento de serviços</h1>
-        <p>Em breve você poderá escolher um horário diretamente pelo calendário online.</p>
+      <div class="container localizacao-grid">
+        <div>
+          <h1>Agendamento de serviços</h1>
+          <p>Em breve você poderá escolher um horário diretamente pelo calendário online.</p>
+          <p>Enquanto isso, agendamos tudo pelo WhatsApp para agilizar o seu atendimento.</p>
+          <ul class="lista-marcadores">
+            <li>Informe modelo do carro e problema no ar-condicionado.</li>
+            <li>Escolha o melhor dia e turno para você.</li>
+            <li>Receba confirmação rápida da equipe DOCAR.</li>
+          </ul>
+          <button class="btn-cta"
+                  onclick="handleWhatsAppClick('agendamento_whatsapp','Quero agendar um horário na DOCAR para ver o ar do meu carro.');">
+            Agendar pelo WhatsApp
+          </button>
+        </div>
 
-        <!-- QUANDO TIVER O LINK DO CALENDLY, SUBSTITUIR ABAIXO -->
-        <!-- Exemplo de embed:
-        <div class="calendly-inline-widget"
-             data-url="https://calendly.com/SEU_USUARIO/avaliacao-ar-docar"
-             style="min-width:320px;height:700px;"></div>
-        <script type="text/javascript"
-                src="https://assets.calendly.com/assets/external/widget.js"
-                async></script>
-        -->
-
-        <p>Enquanto isso, agende pelo WhatsApp da DOCAR.</p>
-        <button class="btn-cta"
-                onclick="handleWhatsAppClick('agendamento_whatsapp','Quero agendar horário na DOCAR para avaliar o ar condicionado do meu carro.');">
-          Agendar pelo WhatsApp
-        </button>
+        <div class="hero-card">
+          <h2>Horário de atendimento</h2>
+          <p><strong>Segunda a sábado</strong>, em horário comercial.</p>
+          <p>Envie uma mensagem e combinamos o melhor horário para o seu atendimento.</p>
+          <p>Quando o calendário online estiver pronto, o link aparecerá aqui.</p>
+        </div>
       </div>
     </section>
-
-    <button class="whatsapp-float"
-            onclick="handleWhatsAppClick('whatsapp_flutuante_agendamento','');">
-      <img src="/docar-refrigeracao/assets/img/icones/whatsapp.svg" alt="">
-    </button>
   </main>
+
+  <button class="whatsapp-float"
+          onclick="handleWhatsAppClick('whatsapp_flutuante_agendamento','');">
+    <img src="/docar-refrigeracao/assets/img/icones/whatsapp.svg" alt="">
+  </button>
 
   <script src="/docar-refrigeracao/assets/js/main.js"></script>
 </body>
