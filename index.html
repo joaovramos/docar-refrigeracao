@@ -57,26 +57,31 @@
             <li>Serviço rápido e especializado em refrigeração automotiva.</li>
           </ul>
         </div>
-        <div class="hero-card">
-          <h2>Fale agora com a DOCAR</h2>
-          <p>Envie uma mensagem no WhatsApp e receba seu orçamento.</p>
-          <div class="hero-contact-item">
-            <span class="contact-label">WhatsApp</span>
-            <span class="contact-value">(81) 98833-9630</span>
+        <div class="hero-side">
+          <div class="hero-card">
+            <h2>Fale agora com a DOCAR</h2>
+            <p>Envie uma mensagem no WhatsApp e receba seu orçamento.</p>
+            <div class="hero-contact-item">
+              <span class="contact-label">WhatsApp</span>
+              <span class="contact-value">(81) 98833-9630</span>
+            </div>
+            <div class="hero-contact-item">
+              <span class="contact-label">Endereço</span>
+              <span class="contact-value">Caxangá, ao lado de Aldo Car – Recife/PE</span>
+            </div>
+            <button class="btn-cta full"
+                    onclick="handleWhatsAppClick('hero_card_whatsapp','Quero um orçamento para o ar condicionado do meu carro.');">
+              Chamar no WhatsApp
+            </button>
           </div>
-          <div class="hero-contact-item">
-            <span class="contact-label">Endereço</span>
-            <span class="contact-value">Caxangá, ao lado de Aldo Car – Recife/PE</span>
+          <div class="hero-image">
+            <img src="/docar-refrigeracao/assets/img/hero-car-ac.jpg" alt="Serviço de ar condicionado automotivo na DOCAR">
           </div>
-          <button class="btn-cta full"
-                  onclick="handleWhatsAppClick('hero_card_whatsapp','Quero um orçamento para o ar condicionado do meu carro.');">
-            Chamar no WhatsApp
-          </button>
         </div>
       </div>
     </section>
 
-    <!-- BLOCO SERVIÇOS -->
+    <!-- SERVIÇOS -->
     <section class="section-light">
       <div class="container">
         <div class="section-header">
@@ -97,7 +102,6 @@
               Quero carga de gás →
             </button>
           </article>
-
           <article class="card-servico">
             <h3>Troca de compressor</h3>
             <p>Substituição do compressor com peças de qualidade e instalação especializada.</p>
@@ -111,7 +115,6 @@
               Trocar compressor →
             </button>
           </article>
-
           <article class="card-servico">
             <h3>Higienização</h3>
             <p>Higienização do sistema para eliminar odores, fungos e bactérias que circulam no ar.</p>
@@ -125,7 +128,6 @@
               Higienizar ar do carro →
             </button>
           </article>
-
           <article class="card-servico">
             <h3>Diagnóstico completo</h3>
             <p>Diagnóstico elétrico e mecânico para descobrir exatamente o problema do ar-condicionado.</p>
@@ -140,14 +142,13 @@
             </button>
           </article>
         </div>
-
         <div class="center">
           <a href="/docar-refrigeracao/servicos/" class="btn-secondary">Ver todos os detalhes dos serviços</a>
         </div>
       </div>
     </section>
 
-    <!-- BLOCO PROVA SOCIAL -->
+    <!-- PROVA SOCIAL -->
     <section class="section-dark">
       <div class="container depoimentos-grid">
         <div>
@@ -163,46 +164,4 @@
           <article class="card-depoimento">
             <p>"Resolvi o ar do meu carro no mesmo dia. Atendimento rápido e honesto na Caxangá."</p>
             <span>João M. – Iputinga</span>
-          </article>
-          <article class="card-depoimento">
-            <p>"Fizeram diagnóstico, explicaram tudo e só trocaram o que realmente precisava."</p>
-            <span>Ana L. – Caxangá</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- BLOCO LOCALIZAÇÃO -->
-    <section class="section-light">
-      <div class="container localizacao-grid">
-        <div>
-          <h2>Onde fica a DOCAR</h2>
-          <p>Oficina na Caxangá, ao lado de Aldo Car, em Recife – PE.</p>
-          <p>Perfeita para quem circula pela região oeste, BR-101 e entorno.</p>
-          <ul class="lista-marcadores">
-            <li>Fácil acesso e estacionamento.</li>
-            <li>Atendimento via WhatsApp para agilizar o serviço.</li>
-            <li>Ideal para manutenção preventiva ou corretiva.</li>
-          </ul>
-          <button class="btn-cta"
-                  onclick="handleWhatsAppClick('home_localizacao','Quero a localização e um horário na DOCAR.');">
-            Agendar visita pelo WhatsApp
-          </button>
-        </div>
-        <div class="map-wrapper">
-          <iframe src="https://www.google.com/maps/embed?pb=SEU_EMBED"
-                  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <button class="whatsapp-float"
-          onclick="handleWhatsAppClick('whatsapp_flutuante_home','');"
-          aria-label="WhatsApp Orçamento DOCAR">
-    <img src="/docar-refrigeracao/assets/img/icones/whatsapp.svg" alt="">
-  </button>
-
-  <script src="/docar-refrigeracao/assets/js/main.js"></script>
-</body>
-</html>
+          </
