@@ -3,11 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo de Peças de Ar Condicionado | DOCAR Recife</title>
-  <meta name="description" content="Catálogo de peças de ar condicionado automotivo em Recife. Compressores, evaporadores, condensadores, filtros secadores e válvulas na DOCAR Refrigeração.">
+  <title>Ar Condicionado Automotivo em Recife | DOCAR Refrigeração</title>
+  <meta name="description" content="DOCAR Refrigeração Automotiva em Recife, Caxangá. Carga de gás, troca de compressor, higienização e diagnóstico de ar condicionado automotivo. Agende pelo WhatsApp.">
 
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="/docar-refrigeracao/assets/css/style.css">
+
+  <!-- Schema LocalBusiness / AutoRepair -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "DOCAR Refrigeração Automotiva",
+    "description": "Serviços de refrigeração automotiva em Recife, Caxangá, ao lado de Aldo Car.",
+    "url": "https://joaovramos.github.io/docar-refrigeracao",
+    "telephone": "+55-81-98833-9630",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Caxangá, ao lado de Aldo Car",
+      "addressLocality": "Recife",
+      "addressRegion": "PE",
+      "postalCode": "50000-000",
+      "addressCountry": "BR"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Recife"
+    }
+  }
+  </script>
+
+  <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
   <script src="/docar-refrigeracao/assets/js/ga4.js"></script>
 </head>
@@ -20,231 +46,104 @@
         <a href="/docar-refrigeracao/servicos/">Serviços</a>
         <a href="/docar-refrigeracao/catalogo/">Catálogo</a>
         <a href="/docar-refrigeracao/agendamento/">Agendamento</a>
+        <a href="javascript:void(0)" class="btn-primary"
+           onclick="handleWhatsAppClick('home_menu','');">
+          WhatsApp
+        </a>
       </nav>
     </div>
   </header>
 
-  <main class="page">
-    <section class="section-light">
-      <div class="container">
-        <h1>Catálogo de peças de refrigeração automotiva</h1>
-        <p>Peças selecionadas para sistemas de ar condicionado automotivo em Recife.</p>
-
-        <div class="cards-grid catalogo-grid">
-
-          <!-- 20 itens aleatórios do segmento -->
-          <article class="card-peca">
-            <img src="/assets/img/pecas/compressor-gol-g6.jpg" alt="Compressor de ar condicionado Gol G6">
-            <h2>Compressor Gol G6</h2>
-            <p>Compressor novo para VW Gol G6 1.6.</p>
-            <p class="preco">R$ 1.200,00</p>
-            <button class="btn-cta btn-peca" data-produto="Compressor Gol G6" onclick="comprarPeca(this);">
-              Comprar pelo WhatsApp
-            </button>
-          </article>
-
-          <article class="card-peca">
-            <img src="/assets/img/pecas/compressor-palio.jpg" alt="Compressor de ar condicionado Palio">
-            <h2>Compressor Palio</h2>
-            <p>Compressor de ar condicionado para Fiat Palio.</p>
-            <p class="preco">R$ 1.150,00</p>
-            <button class="btn-cta btn-peca" data-produto="Compressor Palio" onclick="comprarPeca(this);">
-              Comprar pelo WhatsApp
-            </button>
-          </article>
-
-          <article class="card-peca">
-            <img src="/assets/img/pecas/compressor-corsa.jpg" alt="Compressor de ar condicionado Corsa">
-            <h2>Compressor Corsa</h2>
-            <p>Compressor para Chevrolet Corsa com garantia.</p>
-            <p class="preco">R$ 1.100,00</p>
-            <button class="btn-cta btn-peca" data-produto="Compressor Corsa" onclick="comprarPeca(this);">
-              Comprar pelo WhatsApp
-            </button>
-          </article>
-
-          <article class="card-peca">
-            <img src="/assets/img/pecas/evaporador-fox.jpg" alt="Evaporador VW Fox">
-            <h2>Evaporador Fox</h2>
-            <p>Evaporador de ar condicionado para VW Fox.</p>
-            <p class="preco">R$ 680,00</p>
-            <button class="btn-cta btn-peca" data-produto="Evaporador Fox" onclick="comprarPeca(this);">
-              Comprar pelo WhatsApp
-            </button>
-          </article>
-
-          <article class="card-peca">
-            <img src="/assets/img/pecas/evaporador-onix.jpg" alt="Evaporador Onix">
-            <h2>Evaporador Onix</h2>
-            <p>Evaporador para Chevrolet Onix.</p>
-            <p class="preco">R$ 720,00</p>
-            <button class="btn-cta btn-peca" data-produto="Evaporador Onix" onclick="comprarPeca(this);">
-              Comprar pelo WhatsApp
-            </button>
-          </article>
-
-          <article class="card-peca">
-            <img src="/assets/img/pecas/evaporador-uno.jpg" alt="Evaporador Uno">
-            <h2>Evaporador Uno</h2>
-            <p>Evaporador de ar condicionado para Fiat Uno.</p>
-            <p class="preco">R$ 590,00</p>
-            <button class="btn-cta btn-peca" data-produto="Evaporador Uno" onclick="comprarPeca(this);">
-              Comprar pelo WhatsApp
-            </button>
-          </article>
-
-          <article class="card-peca">
-            <img src="/assets/img/pecas/condensador-civic.jpg" alt="Condensador Honda Civic">
-            <h2>Condensador Civic</h2>
-            <p>Condensador de ar condicionado para Honda Civic.</p>
-            <p class="preco">R$ 980,00</p>
-            <button class="btn-cta btn-peca" data-produto="Condensador Civic" onclick="comprarPeca(this);">
-              Comprar pelo WhatsApp
-            </button>
-          </article>
-
-          <article class="card-peca">
-            <img src="/assets/img/pecas/condensador-corolla.jpg" alt="Condensador Corolla">
-            <h2>Condensador Corolla</h2>
-            <p>Condensador para Toyota Corolla.</p>
-            <p class="preco">R$ 1.050,00</p>
-            <button class="btn-cta btn-peca" data-produto="Condensador Corolla" onclick="comprarPeca(this);">
-              Comprar pelo WhatsApp
-            </button>
-          </article>
-
-          <article class="card-peca">
-            <img src="/assets/img/pecas/condensador-siena.jpg" alt="Condensador Siena">
-            <h2>Condensador Siena</h2>
-            <p>Condensador de ar para Fiat Siena.</p>
-            <p class="preco">R$ 870,00</p>
-            <button class="btn-cta btn-peca" data-produto="Condensador Siena" onclick="comprarPeca(this);">
-              Comprar pelo WhatsApp
-            </button>
-          </article>
-
-          <article class="card-peca">
-            <img src="/assets/img/pecas/filtro-secador-universal.jpg" alt="Filtro secador universal">
-            <h2>Filtro secador universal</h2>
-            <p>Filtro secador para sistemas de ar automotivo.</p>
-            <p class="preco">R$ 120,00</p>
-            <button class="btn-cta btn-peca" data-produto="Filtro secador universal" onclick="comprarPeca(this);">
-              Comprar pelo WhatsApp
-            </button>
-          </article>
-
-          <article class="card-peca">
-            <img src="/assets/img/pecas/filtro-secador-corolla.jpg" alt="Filtro secador Corolla">
-            <h2>Filtro secador Corolla</h2>
-            <p>Filtro secador para Toyota Corolla.</p>
-            <p class="preco">R$ 150,00</p>
-            <button class="btn-cta btn-peca" data-produto="Filtro secador Corolla" onclick="comprarPeca(this);">
-              Comprar pelo WhatsApp
-            </button>
-          </article>
-
-          <article class="card-peca">
-            <img src="/assets/img/pecas/filtro-secador-onix.jpg" alt="Filtro secador Onix">
-            <h2>Filtro secador Onix</h2>
-            <p>Filtro secador para Chevrolet Onix.</p>
-            <p class="preco">R$ 140,00</p>
-            <button class="btn-cta btn-peca" data-produto="Filtro secador Onix" onclick="comprarPeca(this);">
-              Comprar pelo WhatsApp
-            </button>
-          </article>
-
-          <article class="card-peca">
-            <img src="/assets/img/pecas/valvula-expansao-gol.jpg" alt="Válvula de expansão Gol">
-            <h2>Válvula de expansão Gol</h2>
-            <p>Válvula de expansão para VW Gol.</p>
-            <p class="preco">R$ 210,00</p>
-            <button class="btn-cta btn-peca" data-produto="Válvula de expansão Gol" onclick="comprarPeca(this);">
-              Comprar pelo WhatsApp
-            </button>
-          </article>
-
-          <article class="card-peca">
-            <img src="/assets/img/pecas/valvula-expansao-fiesta.jpg" alt="Válvula de expansão Fiesta">
-            <h2>Válvula de expansão Fiesta</h2>
-            <p>Válvula de expansão para Ford Fiesta.</p>
-            <p class="preco">R$ 220,00</p>
-            <button class="btn-cta btn-peca" data-produto="Válvula de expansão Fiesta" onclick="comprarPeca(this);">
-              Comprar pelo WhatsApp
-            </button>
-          </article>
-
-          <article class="card-peca">
-            <img src="/assets/img/pecas/valvula-expansao-celta.jpg" alt="Válvula de expansão Celta">
-            <h2>Válvula de expansão Celta</h2>
-            <p>Válvula de expansão para Chevrolet Celta.</p>
-            <p class="preco">R$ 195,00</p>
-            <button class="btn-cta btn-peca" data-produto="Válvula de expansão Celta" onclick="comprarPeca(this);">
-              Comprar pelo WhatsApp
-            </button>
-          </article>
-
-          <article class="card-peca">
-            <img src="/assets/img/pecas/kit-vedacao-ar.jpg" alt="Kit de vedação de ar">
-            <h2>Kit de vedação de ar</h2>
-            <p>Kit de anéis e vedações para ar condicionado automotivo.</p>
-            <p class="preco">R$ 90,00</p>
-            <button class="btn-cta btn-peca" data-produto="Kit de vedação de ar" onclick="comprarPeca(this);">
-              Comprar pelo WhatsApp
-            </button>
-          </article>
-
-          <article class="card-peca">
-            <img src="/assets/img/pecas/kit-carga-gas-r134a.jpg" alt="Kit carga de gás R134a">
-            <h2>Kit carga de gás R134a</h2>
-            <p>Kit com gás R134a para recarga de ar automotivo.</p>
-            <p class="preco">R$ 260,00</p>
-            <button class="btn-cta btn-peca" data-produto="Kit carga de gás R134a" onclick="comprarPeca(this);">
-              Comprar pelo WhatsApp
-            </button>
-          </article>
-
-          <article class="card-peca">
-            <img src="/assets/img/pecas/sensor-pressao-ar.jpg" alt="Sensor de pressão do ar condicionado">
-            <h2>Sensor de pressão do ar</h2>
-            <p>Sensor de pressão para sistemas de ar condicionado automotivo.</p>
-            <p class="preco">R$ 240,00</p>
-            <button class="btn-cta btn-peca" data-produto="Sensor de pressão do ar" onclick="comprarPeca(this);">
-              Comprar pelo WhatsApp
-            </button>
-          </article>
-
-          <article class="card-peca">
-            <img src="/assets/img/pecas/correia-compressor.jpg" alt="Correia do compressor">
-            <h2>Correia do compressor</h2>
-            <p>Correia para acionamento de compressor de ar condicionado.</p>
-            <p class="preco">R$ 130,00</p>
-            <button class="btn-cta btn-peca" data-produto="Correia do compressor" onclick="comprarPeca(this);">
-              Comprar pelo WhatsApp
-            </button>
-          </article>
-
-          <article class="card-peca">
-            <img src="/assets/img/pecas/kit-orings-ar.jpg" alt="Kit O-rings para ar">
-            <h2>Kit O-rings para ar</h2>
-            <p>Kit com O-rings para manutenção do sistema de ar.</p>
-            <p class="preco">R$ 80,00</p>
-            <button class="btn-cta btn-peca" data-produto="Kit O-rings para ar" onclick="comprarPeca(this);">
-              Comprar pelo WhatsApp
-            </button>
-          </article>
-
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Refrigeração automotiva em Recife, Caxangá, com serviço rápido e confiável.</h1>
+          <p>A DOCAR cuida do ar condicionado do seu carro com carga de gás, troca de compressor, higienização e diagnóstico completo.</p>
+          <button class="btn-cta"
+                  onclick="handleWhatsAppClick('home_hero','Quero agendar uma avaliação do ar condicionado do meu carro.');">
+            Agendar agora pelo WhatsApp
+          </button>
+          <p class="hero-sub">Atendimento em Recife e região, ao lado da Aldo Car na Caxangá.</p>
+        </div>
+        <div class="hero-image">
+          <img src="/docar-refrigeracao/assets/img/hero-car-ac.jpg" alt="Técnico da DOCAR fazendo manutenção em ar condicionado automotivo">
         </div>
       </div>
     </section>
 
-    <button class="whatsapp-float"
-            onclick="handleWhatsAppClick('whatsapp_flutuante_catalogo','');">
-      <img src="/assets/img/icones/whatsapp.svg" alt="">
-    </button>
+    <!-- RESUMO SERVIÇOS -->
+    <section id="servicos" class="section-light">
+      <div class="container">
+        <h2>Serviços em ar condicionado automotivo</h2>
+        <div class="cards-grid">
+          <article class="card-servico">
+            <h3>Carga de gás</h3>
+            <p>Recarga de gás do ar condicionado com teste de vazamento e verificação de pressão.</p>
+          </article>
+          <article class="card-servico">
+            <h3>Troca de compressor</h3>
+            <p>Substituição de compressor com peças de qualidade e garantia.</p>
+          </article>
+          <article class="card-servico">
+            <h3>Higienização</h3>
+            <p>Higienização interna para eliminar odores, fungos e bactérias.</p>
+          </article>
+          <article class="card-servico">
+            <h3>Diagnóstico de sistema</h3>
+            <p>Diagnóstico elétrico e mecânico completo do sistema de ar.</p>
+          </article>
+        </div>
+        <div class="center">
+          <a href="/docar-refrigeracao/servicos/" class="btn-secondary">Ver serviços em detalhe</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section-dark">
+      <div class="container">
+        <h2>Clientes satisfeitos em Recife</h2>
+        <div class="cards-grid">
+          <article class="card-depoimento">
+            <p>"Resolvi o ar do meu carro no mesmo dia. Atendimento rápido na Caxangá."</p>
+            <span>João M., Iputinga</span>
+          </article>
+          <article class="card-depoimento">
+            <p>"Ótimo atendimento, explicaram tudo antes do serviço. Recomendo a DOCAR."</p>
+            <span>Ana L., Caxangá</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section class="section-light">
+      <div class="container">
+        <h2>Onde fica a DOCAR</h2>
+        <p>Estamos na Caxangá, ao lado de Aldo Car, em Recife – PE.</p>
+        <p>Atendemos motoristas de toda a região metropolitana do Recife.</p>
+        <div class="map-wrapper">
+          <iframe src="https://www.google.com/maps/embed?pb=SEU_EMBED"
+                  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="center">
+          <button class="btn-cta"
+                  onclick="handleWhatsAppClick('home_localizacao','Quero a localização da DOCAR para chegar até a oficina.');">
+            Agende agora
+          </button>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <button class="whatsapp-float"
+          onclick="handleWhatsAppClick('whatsapp_flutuante_home','');"
+          aria-label="WhatsApp Orçamento DOCAR">
+    <img src="/docar-refrigeracao/assets/img/icones/whatsapp.svg" alt="">
+  </button>
 
   <script src="/docar-refrigeracao/assets/js/main.js"></script>
 </body>
 </html>
-
-
