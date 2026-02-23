@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Serviços de Ar Condicionado Automotivo | DOCAR Recife</title>
-  <meta name="description" content="Serviços de refrigeração automotiva em Recife: carga de gás, troca de compressor, higienização e diagnóstico completo de ar condicionado automotivo na DOCAR.">
+  <title>Serviços de Ar Condicionado Automotivo | DOCAR Linha Leve e Pesada</title>
+  <meta name="description" content="Serviços completos em ar condicionado automotivo em Recife: recarga de gás R134a/R1234yf, detecção de vazamentos, higienização, diagnóstico eletrônico e troca de peças linha leve e pesada.">
 
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="/docar-refrigeracao/assets/css/style.css">
@@ -35,66 +35,98 @@
       <div class="container">
         <div class="section-header">
           <h1>Serviços de refrigeração automotiva</h1>
-          <p>Escolha o serviço ideal para o ar condicionado do seu carro em Recife.</p>
+          <p>Atendimento em ar condicionado automotivo, peças e serviço para linha leve e pesada.</p>
         </div>
 
-        <div class="cards-grid">
-          <article class="card-servico">
-            <h2>Carga de gás</h2>
-            <p>Recarga de gás do ar condicionado com equipamentos de precisão, teste de vazamento e conferência de pressão.</p>
-            <ul>
-              <li>Melhor resfriamento dentro do carro.</li>
-              <li>Mais conforto no trânsito de Recife.</li>
-              <li>Maior vida útil do sistema.</li>
-            </ul>
-            <button class="btn-cta"
-                    onclick="handleWhatsAppClick('servicos_carga_gas','Tenho interesse em carga de gás na DOCAR em Recife.');">
-              Agendar carga de gás
-            </button>
-          </article>
+        <!-- 1. Recarga -->
+        <article class="card-servico">
+          <h2>Recarga de gás (R134a / R1234yf)</h2>
+          <p>Recarga de gás do ar condicionado com equipamentos de precisão, teste de vazamento e conferência de pressão.</p>
+          <ul>
+            <li>Gás R134a e R1234yf conforme o sistema do veículo.</li>
+            <li>Teste de pressões de alta e baixa.</li>
+            <li>Ideal para quando o ar começa a gelar pouco.</li>
+          </ul>
+          <button class="btn-cta"
+                  onclick="handleWhatsAppClick('servicos_recarga_gas','Quero agendar recarga de gás do ar condicionado.');">
+            Agendar recarga de gás
+          </button>
+        </article>
 
-          <article class="card-servico">
-            <h2>Troca de compressor</h2>
-            <p>Substituição de compressores danificados por peças novas ou recondicionadas, com instalação especializada.</p>
-            <ul>
-              <li>Peças com procedência garantida.</li>
-              <li>Testes completos após o serviço.</li>
-              <li>Atendimento na Caxangá, ao lado de Aldo Car.</li>
-            </ul>
-            <button class="btn-cta"
-                    onclick="handleWhatsAppClick('servicos_troca_compressor','Quero orçamento para troca de compressor na DOCAR.');">
-              Pedir orçamento
-            </button>
-          </article>
+        <!-- 2. Vazamentos -->
+        <article class="card-servico">
+          <h2>Detecção e reparo de vazamentos</h2>
+          <p>Identificação de vazamentos no sistema de ar condicionado automotivo com teste específico.</p>
+          <ul>
+            <li>Teste com nitrogênio e detector eletrônico.</li>
+            <li>Reparo de conexões, mangueiras e componentes.</li>
+            <li>Evita perda recorrente de gás e novas quebras.</li>
+          </ul>
+          <button class="btn-cta"
+                  onclick="handleWhatsAppClick('servicos_vazamentos','Meu ar está vazando gás, quero orçamento.');">
+            Verificar vazamentos
+          </button>
+        </article>
 
-          <article class="card-servico">
-            <h2>Higienização de ar condicionado</h2>
-            <p>Higienização interna para eliminar odores, fungos e bactérias que circulam no ar do veículo.</p>
-            <ul>
-              <li>Melhora a qualidade do ar.</li>
-              <li>Ajuda quem sofre com alergias.</li>
-              <li>Serviço rápido em Recife.</li>
-            </ul>
-            <button class="btn-cta"
-                    onclick="handleWhatsAppClick('servicos_higienizacao','Quero higienizar o ar do meu carro na DOCAR.');">
-              Agendar higienização
-            </button>
-          </article>
+        <!-- 3. Higienização -->
+        <article class="card-servico">
+          <h2>Higienização completa do sistema</h2>
+          <p>Higienização interna do sistema de ar condicionado para eliminar fungos, bactérias e mau cheiro.</p>
+          <ul>
+            <li>Limpeza do evaporador.</li>
+            <li>Eliminação de odores e mofo.</li>
+            <li>Troca do filtro de cabine.</li>
+          </ul>
+          <button class="btn-cta"
+                  onclick="handleWhatsAppClick('servicos_higienizacao','Quero higienização completa do ar condicionado.');">
+            Agendar higienização
+          </button>
+        </article>
 
-          <article class="card-servico">
-            <h2>Diagnóstico completo do sistema</h2>
-            <p>Diagnóstico elétrico e mecânico completo para identificar falhas no sistema de ar condicionado automotivo.</p>
-            <ul>
-              <li>Identificação precisa de defeitos.</li>
-              <li>Evita trocas desnecessárias de peças.</li>
-              <li>Ideal antes de viagens ou longos períodos de uso.</li>
-            </ul>
-            <button class="btn-cta"
-                    onclick="handleWhatsAppClick('servicos_diagnostico','Quero fazer um diagnóstico do ar condicionado do meu carro na DOCAR.');">
-              Agendar diagnóstico
-            </button>
-          </article>
-        </div>
+        <!-- 4. Diagnóstico -->
+        <article class="card-servico">
+          <h2>Diagnóstico elétrico e eletrônico</h2>
+          <p>Diagnóstico detalhado do sistema elétrico e eletrônico do ar condicionado automotivo.</p>
+          <ul>
+            <li>Teste de pressões alta e baixa.</li>
+            <li>Verificação de sensores, relés e chicotes.</li>
+            <li>Indicado quando o ar desliga sozinho ou oscila.</li>
+          </ul>
+          <button class="btn-cta"
+                  onclick="handleWhatsAppClick('servicos_diagnostico','Quero diagnóstico do sistema de ar condicionado.');">
+            Fazer diagnóstico
+          </button>
+        </article>
+
+        <!-- 5. Troca de componentes -->
+        <article class="card-servico">
+          <h2>Troca de compressor, condensador e válvula de expansão</h2>
+          <p>Substituição de componentes principais do sistema de ar para restaurar o desempenho.</p>
+          <ul>
+            <li>Compressor, condensador e válvula de expansão.</li>
+            <li>Peças e mão de obra com procedência.</li>
+            <li>Serviço com teste completo após a troca.</li>
+          </ul>
+          <button class="btn-cta"
+                  onclick="handleWhatsAppClick('servicos_pecas','Quero orçamento de peças e serviço para o ar condicionado.');">
+            Orçamento de peças e serviço
+          </button>
+        </article>
+
+        <!-- 6. Manutenção preventiva -->
+        <article class="card-servico">
+          <h2>Manutenção preventiva</h2>
+          <p>Pacote de manutenção preventiva para evitar quebra do sistema de ar condicionado.</p>
+          <ul>
+            <li>Verificação geral do sistema.</li>
+            <li>Limpeza, testes e ajustes.</li>
+            <li>Ideal para quem depende do carro ou caminhão no dia a dia.</li>
+          </ul>
+          <button class="btn-cta"
+                  onclick="handleWhatsAppClick('servicos_preventiva','Quero manutenção preventiva do ar condicionado.');">
+            Agendar manutenção preventiva
+          </button>
+        </article>
       </div>
     </section>
   </main>
