@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catálogo de Peças de Ar Condicionado | DOCAR Recife</title>
-  <meta name="description" content="Catálogo de peças de ar condicionado automotivo em Recife. Compressores, evaporadores, condensadores, filtros secadores e válvulas na DOCAR Refrigeração.">
+  <meta name="description" content="Catálogo de peças de ar condicionado automotivo em Recife. Compressores, evaporadores, condensadores, filtros secadores e válvulas para linha leve e pesada na DOCAR Refrigeração.">
 
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="/docar-refrigeracao/assets/css/style.css">
@@ -35,14 +35,15 @@
       <div class="container">
         <div class="section-header">
           <h1>Catálogo de peças de refrigeração automotiva</h1>
-          <p>Peças selecionadas para sistemas de ar condicionado automotivo em Recife.</p>
+          <p>Peças selecionadas para sistemas de ar condicionado automotivo, linha leve e pesada.</p>
         </div>
 
         <div class="cards-grid catalogo-grid">
 
-          <!-- EXEMPLOS: troque as imagens pelos arquivos reais em assets/img/pecas -->
+          <!-- EXEMPLOS – troque imagens e preços conforme necessário -->
+
           <article class="card-peca">
-            <img src="/docar-refrigeracao/assets/img/pecas/compressor-gol-g6.jpg" alt="Compressor de ar condicionado Gol G6">
+            <img src="/docar-refrigeracao/assets/img/pecas/compressor-gol-g6.jpg" alt="Compressor Gol G6">
             <h2>Compressor Gol G6</h2>
             <p>Compressor novo para VW Gol G6 1.6.</p>
             <p class="preco">R$ 1.200,00</p>
@@ -54,7 +55,7 @@
           </article>
 
           <article class="card-peca">
-            <img src="/docar-refrigeracao/assets/img/pecas/compressor-palio.jpg" alt="Compressor de ar condicionado Palio">
+            <img src="/docar-refrigeracao/assets/img/pecas/compressor-palio.jpg" alt="Compressor Palio">
             <h2>Compressor Palio</h2>
             <p>Compressor de ar condicionado para Fiat Palio.</p>
             <p class="preco">R$ 1.150,00</p>
@@ -66,7 +67,7 @@
           </article>
 
           <article class="card-peca">
-            <img src="/docar-refrigeracao/assets/img/pecas/compressor-corsa.jpg" alt="Compressor de ar condicionado Corsa">
+            <img src="/docar-refrigeracao/assets/img/pecas/compressor-corsa.jpg" alt="Compressor Corsa">
             <h2>Compressor Corsa</h2>
             <p>Compressor para Chevrolet Corsa com garantia.</p>
             <p class="preco">R$ 1.100,00</p>
@@ -77,11 +78,79 @@
             </button>
           </article>
 
-          <!-- continue reaproveitando os outros 17 itens que você já tinha,
-               só cuidando de:
-               - src das imagens: /docar-refrigeracao/assets/img/pecas/...
-               - data-produto com o nome da peça
-          -->
+          <article class="card-peca">
+            <img src="/docar-refrigeracao/assets/img/pecas/evaporador-fox.jpg" alt="Evaporador Fox">
+            <h2>Evaporador Fox</h2>
+            <p>Evaporador de ar condicionado para VW Fox.</p>
+            <p class="preco">R$ 680,00</p>
+            <button class="btn-cta btn-peca"
+                    data-produto="Evaporador Fox"
+                    onclick="comprarPeca(this);">
+              Comprar pelo WhatsApp
+            </button>
+          </article>
+
+          <article class="card-peca">
+            <img src="/docar-refrigeracao/assets/img/pecas/evaporador-onix.jpg" alt="Evaporador Onix">
+            <h2>Evaporador Onix</h2>
+            <p>Evaporador para Chevrolet Onix.</p>
+            <p class="preco">R$ 720,00</p>
+            <button class="btn-cta btn-peca"
+                    data-produto="Evaporador Onix"
+                    onclick="comprarPeca(this);">
+              Comprar pelo WhatsApp
+            </button>
+          </article>
+
+          <article class="card-peca">
+            <img src="/docar-refrigeracao/assets/img/pecas/evaporador-uno.jpg" alt="Evaporador Uno">
+            <h2>Evaporador Uno</h2>
+            <p>Evaporador de ar condicionado para Fiat Uno.</p>
+            <p class="preco">R$ 590,00</p>
+            <button class="btn-cta btn-peca"
+                    data-produto="Evaporador Uno"
+                    onclick="comprarPeca(this);">
+              Comprar pelo WhatsApp
+            </button>
+          </article>
+
+          <article class="card-peca">
+            <img src="/docar-refrigeracao/assets/img/pecas/condensador-civic.jpg" alt="Condensador Civic">
+            <h2>Condensador Civic</h2>
+            <p>Condensador de ar condicionado para Honda Civic.</p>
+            <p class="preco">R$ 980,00</p>
+            <button class="btn-cta btn-peca"
+                    data-produto="Condensador Civic"
+                    onclick="comprarPeca(this);">
+              Comprar pelo WhatsApp
+            </button>
+          </article>
+
+          <article class="card-peca">
+            <img src="/docar-refrigeracao/assets/img/pecas/condensador-corolla.jpg" alt="Condensador Corolla">
+            <h2>Condensador Corolla</h2>
+            <p>Condensador para Toyota Corolla.</p>
+            <p class="preco">R$ 1.050,00</p>
+            <button class="btn-cta btn-peca"
+                    data-produto="Condensador Corolla"
+                    onclick="comprarPeca(this);">
+              Comprar pelo WhatsApp
+            </button>
+          </article>
+
+          <article class="card-peca">
+            <img src="/docar-refrigeracao/assets/img/pecas/condensador-siena.jpg" alt="Condensador Siena">
+            <h2>Condensador Siena</h2>
+            <p>Condensador de ar para Fiat Siena.</p>
+            <p class="preco">R$ 870,00</p>
+            <button class="btn-cta btn-peca"
+                    data-produto="Condensador Siena"
+                    onclick="comprarPeca(this);">
+              Comprar pelo WhatsApp
+            </button>
+          </article>
+
+          <!-- continue duplicando o padrão acima para as demais peças que quiser -->
 
         </div>
       </div>
