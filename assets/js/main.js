@@ -1,6 +1,6 @@
 // Config global DOCAR
-const WHATSAPP_PHONE = '5581988339630';
-const WHATSAPP_MSG_PADRAO = 'Olá, vim pelo site e gostaria de orçamento.';
+const WHATSAPP_PHONE = '558192587502'; // 81 9258-7502
+const WHATSAPP_MSG_PADRAO = 'Olá, vim pelo site da DOCAR e gostaria de orçamento.';
 const WHATSAPP_PARAM_ORIGEM = 'origem=site_docar';
 
 // Monta URL padrão
